@@ -79,7 +79,7 @@ unused: $(GOVENDOR)
 
 build: promu
 	@echo ">> building binaries"
-	$(PROMU) build --prefix $(PREFIX) iscdhcpd_exporter
+	$(PROMU) build --prefix $(PREFIX)
 
 tarball: promu
 	@echo ">> building release tarball"

@@ -5,7 +5,7 @@ RUN "env"
 ADD . /go/src/github.com/homecentr/iscdhcpd-exporter
 
 RUN cd /go/src/github.com/homecentr/iscdhcpd-exporter \
-    && make build -o iscdhcpd-exporter
+    && make build
 
 FROM ubuntu:bionic
 

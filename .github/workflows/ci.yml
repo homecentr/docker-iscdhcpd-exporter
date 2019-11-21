@@ -16,6 +16,8 @@ jobs:
 
       - name: Check out code
         uses: actions/checkout@v1
+        with:
+          path: /go/src/github.com/homecentr/iscdhcpd_exporter
 
       - name: Build
-        run: make build
+        run: "cd /go/src/github.com/homecentr/iscdhcpd_exporter && make build"

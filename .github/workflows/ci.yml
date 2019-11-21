@@ -20,6 +20,9 @@ jobs:
       - name: Echo
         run: "echo $GITHUB_WORKSPACE"
 
+      - name: Echo Go module path
+        run: ${{ go.module-path }}
+
       - name: Create directory
         run: "mkdir -p /go/src/github.com/homecentr/iscdhcpd_exporter"
 

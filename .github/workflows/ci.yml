@@ -1,0 +1,21 @@
+name: CI PR/Branch
+on:
+  push:
+    branches-ignore:
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Go
+        uses: actions/setup-go@v1
+        with:
+          go-version: 1.12
+
+      - name: Check out code
+        uses: actions/checkout@v1
+
+      - name: Build
+        run: make build

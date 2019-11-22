@@ -9,26 +9,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Go
-        uses: actions/setup-go@v1
-        id: go
-        with:
-          go-version: 1.12
-
-      - name: Check out code
-        uses: actions/checkout@v1
-
-      - name: All vars
-        run: env
-
-      - name: Echo
-        run: "echo $GITHUB_WORKSPACE"
-
-      - name: Create directory
-        run: "mkdir -p /go/src/github.com/homecentr/iscdhcpd_exporter"
-
-      - name: Copy to directory
-        run: "cp -R $GITHUB_WORKSPACE /go/src/github.com/homecentr/iscdhcpd_exporter"
-
-      - name: Build
-        run: "cd /go/src/github.com/homecentr/iscdhcpd_exporter && make build"
+      - uses: actions/checkout@master
+      - run: docker build .

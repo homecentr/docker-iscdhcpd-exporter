@@ -1,0 +1,15 @@
+{ 
+  "name": "homecentr-dhcp-exporter",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/homecentr/docker-dhcp-exporter.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/homecentr/docker-dhcp-exporter/issues"
+  },
+  "homepage": "https://github.com/homecentr/docker-dhcp-exporter#readme"
+}

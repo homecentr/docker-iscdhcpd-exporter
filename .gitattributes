@@ -1,0 +1,7 @@
+* text=auto
+*.sh            eol=lf
+*.yml           eol=lf
+**/run          eol=lf
+**/finish       eol=lf
+**/services.d/**   eol=lf
+**/cont-init.d/**  eol=lf

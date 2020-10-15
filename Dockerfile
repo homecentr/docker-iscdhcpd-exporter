@@ -21,7 +21,7 @@ RUN ./configure --with-uthash=/uthash/include && \
     make check && \
     make install
 
-FROM golang:1.14.6 as build
+FROM golang:1.15.3 as build
 
 COPY . /go/src/github.com/homecentr/docker-dhcp-exporter
 

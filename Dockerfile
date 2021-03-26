@@ -1,4 +1,4 @@
-FROM alpine:3.12.0 as build_pools
+FROM alpine:3.13.3 as build_pools
 
 # dhcpd-pools build is based on https://sourceforge.net/projects/dhcpd-pools/files/
 ADD https://netix.dl.sourceforge.net/project/dhcpd-pools/dhcpd-pools-3.0.tar.xz /tmp/dhcpd-pools.tar.xz

@@ -29,7 +29,7 @@ WORKDIR /go/src/github.com/homecentr/docker-dhcp-exporter
 
 RUN make build
 
-FROM homecentr/base:2.4.3-alpine
+FROM homecentr/base:3.2.0-alpine
 
 ENV DHCP_EXPORTER_ARGS="--dhcpd.config-file /config/dhcpd.conf --dhcpd.lease-file /leases/dhcpd.leases"
 
